@@ -1,0 +1,12 @@
+{
+  "name": "local-dev",
+  "owner": {
+    "name": "Consigliere"
+  },
+  "plugins": [
+    {
+      "name": "leaniverse-skills",
+      "source": "./../../"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "leaniverse-marketplace",
+  "owner": {
+    "name": "Consigliere",
+    "email": "seree.w@gmail.com"
+  },
+  "metadata": {
+    "description": "Leaniverse agent skills — helping solopreneurs build lean, platform-independent digital product businesses",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "leaniverse-skills",
+      "description": "Essential skills for the Leaniverse solopreneur: business mentoring based on Leaniverse principles and a Hetzner server deployment assistant for Docker, Next.js, and Python apps",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./leaniverse-mentor",
+        "./leaniverse-deploy",
+        "./crystal-prompt"
+      ]
+    }
+  ]
+}

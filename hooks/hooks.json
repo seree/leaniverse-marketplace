@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "description": "Crystal Prompt — evaluates prompt clarity across 5 dimensions and enriches vague prompts with targeted research and clarifying questions before Claude executes",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/crystal-prompt/scripts/crystal-prompt.py || python ${CLAUDE_PLUGIN_ROOT}/crystal-prompt/scripts/crystal-prompt.py",
+            "description": "Run the Crystal Prompt clarity evaluation script"
+          }
+        ]
+      }
+    ]
+  }
+}

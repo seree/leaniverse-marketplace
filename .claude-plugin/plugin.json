@@ -1,0 +1,10 @@
+{
+  "name": "leaniverse-skills",
+  "description": "Agent skills for solopreneurs building lean digital product businesses — includes a Leaniverse business mentor and a Hetzner server deployment assistant",
+  "version": "1.0.0",
+  "author": {
+    "name": "Consigliere",
+    "email": "seree.w@gmail.com"
+  },
+  "license": "MIT"
+}
