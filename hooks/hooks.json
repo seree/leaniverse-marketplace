@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/crystal-prompt/scripts/crystal-prompt.py || python ${CLAUDE_PLUGIN_ROOT}/crystal-prompt/scripts/crystal-prompt.py",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/skills/crystal-prompt/scripts/crystal-prompt.py || python ${CLAUDE_PLUGIN_ROOT}/skills/crystal-prompt/scripts/crystal-prompt.py",
             "description": "Run the Crystal Prompt clarity evaluation script"
           }
         ]

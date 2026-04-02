@@ -15,9 +15,9 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./leaniverse-mentor",
-        "./leaniverse-deploy",
-        "./crystal-prompt"
+        "./skills/leaniverse-mentor",
+        "./skills/leaniverse-deploy",
+        "./skills/crystal-prompt"
       ]
     }
   ]
