@@ -1,0 +1,10 @@
+{
+  "name": "leaniverse-mentor",
+  "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses",
+  "version": "1.0.0",
+  "author": {
+    "name": "Consigliere",
+    "email": "seree.w@gmail.com"
+  },
+  "license": "MIT"
+}
