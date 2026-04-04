@@ -35,6 +35,15 @@
       "skills": [
         "./"
       ]
+    },
+    {
+      "name": "leaniverse-igf",
+      "description": "Leaniverse IGF — designs Instant Gratification Funnels that turn cold visitors into warm email subscribers by delivering expert value before asking for anything in return",
+      "source": "./skills/leaniverse-igf",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
