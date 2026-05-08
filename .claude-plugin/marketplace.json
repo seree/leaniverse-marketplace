@@ -71,6 +71,15 @@
       "skills": [
         "./"
       ]
+    },
+    {
+      "name": "leaniverse-newsletter",
+      "description": "Leaniverse Newsletter — builds a complete email follow-up sequence in the user's brand voice, calibrated to their goal, salesy level, and number of issues",
+      "source": "./skills/leaniverse-newsletter",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
