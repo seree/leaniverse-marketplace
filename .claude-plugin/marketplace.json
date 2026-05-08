@@ -44,6 +44,15 @@
       "skills": [
         "./"
       ]
+    },
+    {
+      "name": "leaniverse-prd",
+      "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document ready to hand to Claude Code",
+      "source": "./skills/leaniverse-prd",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
