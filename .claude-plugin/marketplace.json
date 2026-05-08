@@ -53,6 +53,15 @@
       "skills": [
         "./"
       ]
+    },
+    {
+      "name": "leaniverse-content",
+      "description": "Leaniverse Content — extracts brand voice into BRAND-VOICE.md and writes or rewrites content that strictly matches the brand's voice, tone, style, and themes",
+      "source": "./skills/leaniverse-content",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
