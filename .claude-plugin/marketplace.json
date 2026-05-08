@@ -62,6 +62,15 @@
       "skills": [
         "./"
       ]
+    },
+    {
+      "name": "leaniverse-upsell",
+      "description": "Leaniverse Upsell — generates creative post-purchase upsell ideas by pairing products with strategic rationale, then optionally builds a branded sales page guideline",
+      "source": "./skills/leaniverse-upsell",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
