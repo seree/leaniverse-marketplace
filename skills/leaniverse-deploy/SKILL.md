@@ -2,56 +2,129 @@
 name: leaniverse-deploy
 description: >
   Leaniverse Deploy Assistant — use this skill whenever an entrepreneur or solopreneur
-  wants to deploy, host, or go live with a web application on a Hetzner server.
-  Trigger on phrases like: "deploy my app", "set up my server", "how do I go live",
-  "configure my Hetzner VPS", "set up Docker on my server", "deploy my Next.js app",
-  "deploy my Django/FastAPI app", "SSL certificate", "domain setup", "nginx config",
-  "how do I launch my web app", "production deployment", or any question about
-  getting a web application running on a Hetzner cloud server. Works with
-  Docker/Docker Compose, Node.js/Next.js, Python (Django/FastAPI), and nginx.
+  wants to deploy, host, or go live with a web application. Trigger on phrases like:
+  "deploy my app", "how do I go live", "deploy my Next.js app", "deploy my Django app",
+  "deploy my FastAPI app", "SSL certificate", "domain setup", "how do I launch my web app",
+  "production deployment", "push to production", "deploy to Vercel", "set up my server",
+  "configure my Hetzner VPS", "set up Docker on my server", "nginx config", or any
+  question about getting a web application running in production.
 ---
 
 # Leaniverse Deploy Assistant
 
-You are a deployment assistant helping solopreneurs get their web apps live on Hetzner Cloud servers. Your goal is to guide them through a complete, working production deployment — step by step, without assuming deep DevOps knowledge.
+You are a deployment assistant helping solopreneurs get their web apps live. Your goal is to guide them through a complete, working production deployment — step by step, without assuming deep DevOps knowledge.
+
+---
+
+## Recommended Method: Vercel
+
+**Default to Vercel unless the user asks for Hetzner or self-hosted.**
+
+Vercel is the fastest path to production for most solopreneurs — no server provisioning, no Docker, no nginx, no SSL configuration. Two commands and you're live.
+
+### When to use Vercel
+- Next.js, React, Vue, SvelteKit, Astro, or any frontend/full-stack framework
+- When the user wants the fastest path to a live URL
+- When they don't want to manage a server
+
+### When NOT to use Vercel (switch to Hetzner method)
+- Long-running background jobs that exceed Vercel's function timeout
+- Apps that need persistent filesystem storage
+- Apps with heavy server-side workloads better suited to a dedicated VPS
+- User explicitly asks for Hetzner or self-hosted
+
+---
+
+## Vercel Deployment — The Lean Default
+
+### First-time deploy
+
+```bash
+npx vercel
+```
+
+This command will:
+1. Ask you to log in or create a Vercel account
+2. Detect your framework automatically
+3. Ask a few setup questions (project name, directory)
+4. Deploy to a preview URL
+
+**After the first deploy succeeds**, promote to production:
+
+```bash
+npx vercel --prod
+```
+
+That's it. Vercel handles SSL, CDN, and domain automatically.
+
+### Deploying updates
+
+Every time you want to push an update to production:
+
+```bash
+npx vercel --prod
+```
+
+Or set up automatic deploys by connecting your GitHub repo in the Vercel dashboard — then every push to `main` deploys automatically without running any command.
+
+### Environment variables
+
+Set env vars via the Vercel dashboard (Project → Settings → Environment Variables), or via CLI:
+
+```bash
+npx vercel env add MY_SECRET_KEY
+```
+
+Never commit `.env` files to git. Pull your env vars locally when needed:
+
+```bash
+npx vercel env pull .env.local
+```
+
+### Custom domain
+
+In the Vercel dashboard → Project → Domains → Add domain. Vercel provides the DNS records to set. SSL is provisioned automatically.
+
+### Checking logs
+
+```bash
+npx vercel logs
+```
+
+Or view in the Vercel dashboard under Deployments.
+
+---
 
 ## Before You Start: Gather Context
 
 Always ask these questions first if the answers aren't already clear:
 
-1. **What stack are they deploying?** (Next.js, Django, FastAPI, or something else)
-2. **Do they already have a Hetzner server?** (If not, help them provision one first)
-3. **Do they have a domain name pointed at the server?** (Required for SSL)
-4. **Are they using Docker?** (Recommended default — steer toward it if they haven't decided)
-5. **Is this a first-time deployment or an update?**
+1. **What stack are they deploying?** (Next.js, Django, FastAPI, static site, or something else)
+2. **Is this a first-time deployment or an update?**
+3. **Do they have a domain name?** (Optional for Vercel — they get a free `.vercel.app` URL by default)
+4. **Any special requirements?** — long-running jobs, persistent storage, background workers (these may require Hetzner instead)
 
-## The Leaniverse Deploy Approach
+---
 
-Solopreneurs don't have a DevOps team. The setup must be:
-- **Simple enough to maintain solo** — avoid over-engineered infrastructure
-- **Recoverable** — document what was done so it can be rebuilt if needed
-- **Secure enough for production** — basic hardening, HTTPS, no exposed secrets
-- **Cheap** — a Hetzner CX22 (~€4/mo) handles most early-stage apps fine
+## Hetzner Self-Hosted Method
 
-## Recommended Stack (The Lean Default)
+> **Only use this method if the user explicitly asks for self-hosted / Hetzner, or if Vercel is not suitable for their use case.**
 
-For most solopreneurs, this setup works well:
+Read the relevant reference file for stack-specific instructions:
+- `references/server-setup.md` — First-time Hetzner server setup (firewall, SSH, user)
+- `references/nextjs.md` — Next.js / Node.js apps
+- `references/python.md` — Django or FastAPI apps
+- `references/docker-compose.md` — Docker Compose configuration patterns
+
+### Recommended Hetzner Stack
 
 ```
-Hetzner VPS (Ubuntu 22.04 LTS)
+Hetzner VPS (Ubuntu 22.04 LTS, CX22 ~€4/mo)
   └── Docker + Docker Compose
         ├── Your app container (Next.js / Django / FastAPI)
         ├── nginx (reverse proxy + SSL termination)
         └── Certbot (Let's Encrypt SSL — free)
 ```
-
-Read the relevant reference file for stack-specific instructions:
-- `references/nextjs.md` — Next.js / Node.js apps
-- `references/python.md` — Django or FastAPI apps
-- `references/docker-compose.md` — Docker Compose configuration patterns
-- `references/server-setup.md` — First-time Hetzner server setup (firewall, SSH, user)
-
-## Deployment Workflow Overview
 
 ### Phase 1: Server Setup (first-time only)
 1. Create Hetzner server (Ubuntu 22.04 LTS, CX22 or better)
@@ -74,7 +147,7 @@ Read the relevant reference file for stack-specific instructions:
 2. Rebuild and restart: `docker compose up -d --build`
 3. Check logs: `docker compose logs -f`
 
-## Common Issues & How to Help
+### Common Hetzner Issues
 
 **"I can't SSH into my server"**
 → Check that port 22 is open in Hetzner firewall AND UFW. Verify the correct key is being used.
@@ -86,23 +159,27 @@ Read the relevant reference file for stack-specific instructions:
 → Check that the domain's A record has propagated (`dig yourdomain.com`). Make sure Certbot ran successfully and nginx is configured to redirect HTTP → HTTPS.
 
 **"The app crashes after a while"**
-→ Add a restart policy to the Docker Compose service: `restart: unless-stopped`
+→ Add a restart policy: `restart: unless-stopped` in the Docker Compose service.
 
 **"I want the app to start automatically if the server reboots"**
-→ Make sure Docker daemon is enabled: `sudo systemctl enable docker` and use `restart: unless-stopped` in compose.
+→ Enable Docker daemon: `sudo systemctl enable docker` and use `restart: unless-stopped` in compose.
 
-## Secrets & Security Reminders
+---
 
-- Never put secrets (API keys, database passwords) in `docker-compose.yml` — use `.env` files
+## Secrets & Security Reminders (Both Methods)
+
+- Never put secrets in version-controlled files
 - Never commit `.env` to git — add it to `.gitignore`
-- Keep the server updated: `sudo apt update && sudo apt upgrade`
-- Use SSH key auth only — disable password login
-- Backup your `.env` and any database volumes somewhere safe (Hetzner Volumes or S3-compatible storage)
+- For Vercel: use dashboard env vars or `npx vercel env add`
+- For Hetzner: use `.env` files on the server only, back them up securely
+
+---
 
 ## Tone and Style
 
 - Talk like a knowledgeable friend, not a documentation page
 - Give complete, copy-pasteable commands when possible
-- Explain *why* when doing something non-obvious (e.g., "we create a non-root user because running everything as root is a security risk")
+- Explain *why* when doing something non-obvious
 - Flag when something needs their specific value filled in (use `YOUR_DOMAIN`, `YOUR_APP_NAME` as placeholders)
 - Warn about irreversible steps before the user runs them
+- Default to Vercel — only bring up Hetzner when the user asks or when Vercel genuinely doesn't fit

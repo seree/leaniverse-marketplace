@@ -20,7 +20,7 @@
     },
     {
       "name": "leaniverse-deploy",
-      "description": "Leaniverse deploy assistant — step-by-step Hetzner VPS deployment for Docker, Next.js, and Python apps",
+      "description": "Leaniverse deploy assistant — deploys apps to Vercel by default (npx vercel / npx vercel --prod), with Hetzner VPS as an optional self-hosted path",
       "source": "./skills/leaniverse-deploy",
       "strict": false,
       "skills": [
