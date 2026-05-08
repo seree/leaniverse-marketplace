@@ -28,9 +28,9 @@
       ]
     },
     {
-      "name": "crystal-prompt",
-      "description": "Crystal Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes",
-      "source": "./skills/crystal-prompt",
+      "name": "leaniverse-prompt",
+      "description": "Leaniverse Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes",
+      "source": "./skills/leaniverse-prompt",
       "strict": false,
       "skills": [
         "./"

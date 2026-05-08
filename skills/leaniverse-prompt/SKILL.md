@@ -1,7 +1,7 @@
 ---
-name: crystal-prompt
+name: leaniverse-prompt
 description: >
-  Crystal Prompt — activated automatically by the UserPromptSubmit hook when a prompt
+  Leaniverse Prompt — activated automatically by the UserPromptSubmit hook when a prompt
   lacks sufficient clarity. DO NOT invoke this skill manually unless testing.
   The hook evaluates every prompt for clarity and only calls this skill when it detects
   ambiguity across one or more of the 5 clarity dimensions: Intent, Scope, Context,

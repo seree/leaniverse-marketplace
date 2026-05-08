@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 """
-Crystal Prompt Hook — Leaniverse Marketplace
+Leaniverse Prompt Hook — Leaniverse Marketplace
 Evaluates prompts across 5 clarity dimensions before Claude processes them.
-Invokes the crystal-prompt skill for vague prompts; passes clear ones through immediately.
+Invokes the leaniverse-prompt skill for vague prompts; passes clear ones through immediately.
 """
 
 import json
@@ -54,7 +54,7 @@ if prompt.startswith("#"):
 
 # ── Clarity evaluation wrapper ─────────────────────────────────────────────────
 
-wrapped_prompt = f"""CRYSTAL PROMPT EVALUATION
+wrapped_prompt = f"""LEANIVERSE PROMPT EVALUATION
 
 Original user request: "{escaped_prompt}"
 
@@ -74,7 +74,7 @@ IF all 5 dimensions are clear OR can be confidently inferred from conversation h
 IF one or more dimensions are genuinely unclear AND cannot be inferred:
   → Briefly note: "Hey! I spotted some ambiguity in [dimension(s)] — let me do a quick
     check before diving in."
-  → Use the crystal-prompt skill:
+  → Use the leaniverse-prompt skill:
       1. Research the project (codebase, history, docs) to resolve as many gaps as possible
       2. Ask only about what research couldn't answer (1–5 targeted questions max)
       3. Execute with full clarity once answered
