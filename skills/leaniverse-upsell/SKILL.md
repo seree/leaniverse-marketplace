@@ -57,13 +57,15 @@ Once you have the product list (by either path), confirm it with the user before
 
 ---
 
-## Phase 2 — Generate the Upsell Idea
+## Phase 2 — Think and Plan the Upsell Pairing
 
-Analyze the product catalog and identify the strongest upsell pairing. Present **one primary recommendation** with full rationale — not a list of options. You can offer an alternative if the primary one has a meaningful trade-off.
+Before presenting anything to the user, do this internal reasoning work:
 
-### Upsell Pairing Frameworks
+### Step 1 — Internal Planning (Do This Before Responding)
 
-Use these frameworks to find the best Product A → Product B match:
+For every product in the catalog, map it as a potential Product A (trigger — what the customer just bought). Then, for each Product A, evaluate every other product as a potential Product B (upsell). Score each A → B pairing against the five frameworks below and select the single strongest match.
+
+**Upsell Pairing Frameworks**
 
 **1. Logical Next Step**
 Product B solves the problem that naturally emerges after completing Product A.
@@ -85,49 +87,67 @@ Product B shortens the time to the outcome Product A promises.
 Buying A solves Problem 1 — but solving Problem 1 reveals Problem 2, which B solves.
 > *"They fixed their funnel. Now their email sequence is the weak link."*
 
-### How to Present the Upsell Idea
+Commit to one pairing. Be ready to explain exactly which framework it uses and why it scores higher than the alternatives you considered.
 
-Structure your recommendation like this:
+### Step 2 — Present the Idea
+
+Present your chosen pairing using this structure:
 
 ---
 
-**Upsell: [Product A] → [Product B]**
+**Upsell Idea: [Product A] → [Product B]**
 
-**Why this pairing works:**
-[2–3 sentences explaining the psychological and practical logic — be specific to their products, not generic]
+**Why [Product A] is the starting product:**
+[1–2 sentences: why this is the natural trigger — what state of mind the buyer is in after purchasing it]
 
-**The buyer's state of mind after purchasing [Product A]:**
-[Describe what the customer just accomplished, what they're feeling, and what they're now thinking about next]
+**Why [Product B] is the upsell:**
+[2–3 sentences: the specific logical or psychological link — which framework applies and why it fits these two products in particular]
 
-**Why [Product B] is the natural next offer:**
-[Connect Product B directly to that state of mind — the "of course" moment]
+**The buyer's moment:**
+[Describe the exact emotional and practical state of the customer right after buying Product A — what they've just accomplished, what they're feeling, and what problem or desire is now top of mind]
 
-**Timing:**
-[When in the post-purchase sequence to make the offer — immediately at checkout, 1 day after, after a milestone, etc.]
+**The "of course" connection:**
+[One sentence that makes the pairing feel obvious in hindsight — the moment the user thinks "yes, that makes total sense"]
+
+**Suggested timing:**
+[When to make the offer — immediately post-checkout, 24 hours after purchase, after a specific milestone, etc. — and why]
 
 **One-line pitch:**
-[A single sentence that positions the upsell — could become the headline of the offer page]
+[A single sentence that could become the headline of the upsell offer]
 
 ---
 
-After presenting the idea, ask:
+### Step 3 — Approval Gate
 
-> "Does this pairing feel right for your customers? I can also suggest an alternative if you'd like a second angle."
+After presenting, always ask:
 
----
+> "Does this pairing make sense for your customers? You can:
+> - **Adjust** — swap Product A, swap Product B, or change the angle
+> - **New idea** — I'll pick a different pairing from the catalog
+> - **Approve** — we move on to planning the implementation"
 
-## Phase 3 — Offer to Build the Sales Page
-
-Once the upsell pairing is agreed on, ask:
-
-> "Would you like me to build a upsell sales page as a guideline — the actual copy and structure you'd use to pitch [Product B] right after someone buys [Product A]?"
-
-If the user says **yes**, proceed to Phase 4.
-If they say **no**, summarize the upsell idea in a clean format they can reference when building it themselves.
+Do not proceed to Phase 3 until the user explicitly approves the pairing. If they ask for adjustments or a new idea, revise and present again. Repeat the approval gate after each revision.
 
 ---
 
-## Phase 4 — Build the Upsell Sales Page
+## Phase 3 — Plan the Implementation
+
+Only enter this phase after the user has approved the upsell pairing in Phase 2.
+
+Start by asking:
+
+> "Great — [Product A] → [Product B] it is. Now let's plan how to build it. Would you like me to:
+> - **Build a sales page guideline** — the actual copy and structure to pitch [Product B] right after someone buys [Product A]
+> - **Outline the technical implementation** — what needs to be built in your app or store (trigger logic, redirect, offer page, etc.)
+> - **Both** — sales page + technical plan"
+
+If the user wants the **sales page**, proceed to Phase 4.
+If the user wants the **technical outline**, describe the implementation steps: where the upsell triggers (post-checkout redirect, email sequence, in-app prompt), what pages need to exist, and any backend logic required (order detection, one-time offer expiry, etc.).
+If the user wants **both**, do the sales page first, then the technical outline.
+
+---
+
+## Phase 4 — Build the Upsell Sales Page (If Requested)
 
 ### Step 1 — Check for Brand Voice
 
