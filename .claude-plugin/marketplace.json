@@ -12,7 +12,7 @@
     {
       "name": "leaniverse-mentor",
       "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses",
-      "source": "skills/leaniverse-mentor",
+      "source": "./skills/leaniverse-mentor",
       "strict": false,
       "skills": [
         "skills/leaniverse-mentor"
@@ -21,7 +21,7 @@
     {
       "name": "leaniverse-deploy",
       "description": "Leaniverse deploy assistant — deploys apps to Vercel by default (npx vercel / npx vercel --prod), with Hetzner VPS as an optional self-hosted path",
-      "source": "skills/leaniverse-deploy",
+      "source": "./skills/leaniverse-deploy",
       "strict": false,
       "skills": [
         "skills/leaniverse-deploy"
@@ -30,7 +30,7 @@
     {
       "name": "leaniverse-prompt",
       "description": "Leaniverse Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes",
-      "source": "skills/leaniverse-prompt",
+      "source": "./skills/leaniverse-prompt",
       "strict": false,
       "skills": [
         "skills/leaniverse-prompt"
@@ -39,7 +39,7 @@
     {
       "name": "leaniverse-igf",
       "description": "Leaniverse IGF — designs Instant Gratification Funnels that turn cold visitors into warm email subscribers by delivering expert value before asking for anything in return",
-      "source": "skills/leaniverse-igf",
+      "source": "./skills/leaniverse-igf",
       "strict": false,
       "skills": [
         "skills/leaniverse-igf"
@@ -48,7 +48,7 @@
     {
       "name": "leaniverse-prd",
       "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document ready to hand to Claude Code",
-      "source": "skills/leaniverse-prd",
+      "source": "./skills/leaniverse-prd",
       "strict": false,
       "skills": [
         "skills/leaniverse-prd"
@@ -57,7 +57,7 @@
     {
       "name": "leaniverse-content",
       "description": "Leaniverse Content — extracts brand voice into BRAND-VOICE.md and writes or rewrites content that strictly matches the brand's voice, tone, style, and themes",
-      "source": "skills/leaniverse-content",
+      "source": "./skills/leaniverse-content",
       "strict": false,
       "skills": [
         "skills/leaniverse-content"
@@ -66,7 +66,7 @@
     {
       "name": "leaniverse-upsell",
       "description": "Leaniverse Upsell — generates creative post-purchase upsell ideas by pairing products with strategic rationale, then optionally builds a branded sales page guideline",
-      "source": "skills/leaniverse-upsell",
+      "source": "./skills/leaniverse-upsell",
       "strict": false,
       "skills": [
         "skills/leaniverse-upsell"
@@ -75,7 +75,7 @@
     {
       "name": "leaniverse-newsletter",
       "description": "Leaniverse Newsletter — builds a complete email follow-up sequence in the user's brand voice, calibrated to their goal, salesy level, and number of issues",
-      "source": "skills/leaniverse-newsletter",
+      "source": "./skills/leaniverse-newsletter",
       "strict": false,
       "skills": [
         "skills/leaniverse-newsletter"
