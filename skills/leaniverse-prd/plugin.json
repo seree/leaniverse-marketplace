@@ -6,5 +6,11 @@
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "leaniverse-prd",
+      "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document"
+    }
+  ]
 }

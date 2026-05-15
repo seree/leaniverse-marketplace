@@ -6,5 +6,11 @@
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "leaniverse-upsell",
+      "description": "Leaniverse Upsell — generates post-purchase upsell ideas and branded sales page guidelines"
+    }
+  ]
 }

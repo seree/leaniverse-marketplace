@@ -6,5 +6,11 @@
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "leaniverse-newsletter",
+      "description": "Leaniverse Newsletter — builds complete email follow-up sequences in the user's brand voice"
+    }
+  ]
 }

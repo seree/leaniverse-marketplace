@@ -6,5 +6,11 @@
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "leaniverse-prompt",
+      "description": "Leaniverse Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes"
+    }
+  ]
 }
