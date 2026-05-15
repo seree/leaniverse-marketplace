@@ -1,16 +1,10 @@
 {
   "name": "leaniverse-content",
-  "description": "Leaniverse Content — extracts brand voice into BRAND-VOICE.md and writes or rewrites content that strictly matches the brand's voice, tone, style, and themes",
+  "description": "Leaniverse Content \u2014 extracts brand voice into BRAND-VOICE.md and writes or rewrites content that strictly matches the brand's voice, tone, style, and themes",
   "version": "1.0.0",
   "author": {
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "leaniverse-content",
-      "description": "Leaniverse Content — extracts brand voice and writes content that strictly matches it"
-    }
-  ]
+  "license": "MIT"
 }

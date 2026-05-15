@@ -1,16 +1,10 @@
 {
   "name": "leaniverse-prd",
-  "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document ready to hand to Claude Code",
+  "description": "Leaniverse PRD \u2014 guides solopreneurs through producing a minimal, structured product requirements document ready to hand to Claude Code",
   "version": "1.0.0",
   "author": {
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "leaniverse-prd",
-      "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document"
-    }
-  ]
+  "license": "MIT"
 }

@@ -1,16 +1,10 @@
 {
   "name": "leaniverse-mentor",
-  "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses",
+  "description": "Leaniverse business mentor \u2014 strategic guidance for solopreneurs building lean, platform-independent digital product businesses",
   "version": "1.0.0",
   "author": {
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "leaniverse-mentor",
-      "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses"
-    }
-  ]
+  "license": "MIT"
 }

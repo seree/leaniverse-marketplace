@@ -12,122 +12,74 @@
     {
       "name": "leaniverse-mentor",
       "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-mentor",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-mentor",
-          "description": "Leaniverse business mentor — strategic guidance for solopreneurs building lean, platform-independent digital product businesses"
-        }
-      ]
+      "source": "./skills/leaniverse-mentor",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["solopreneur", "business", "strategy", "mentor", "lean"]
     },
     {
       "name": "leaniverse-deploy",
       "description": "Leaniverse deploy assistant — deploys apps to Vercel by default (npx vercel / npx vercel --prod), with Hetzner VPS as an optional self-hosted path",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-deploy",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-deploy",
-          "description": "Leaniverse deploy assistant — deploys apps to Vercel by default, with Hetzner VPS as an optional self-hosted path"
-        }
-      ]
+      "source": "./skills/leaniverse-deploy",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "developer-tools",
+      "keywords": ["deploy", "vercel", "hetzner", "vps", "docker", "nextjs"]
     },
     {
       "name": "leaniverse-prompt",
       "description": "Leaniverse Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-prompt",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-prompt",
-          "description": "Leaniverse Prompt — automatically evaluates prompt clarity and asks targeted questions before Claude executes"
-        }
-      ]
+      "source": "./skills/leaniverse-prompt",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["prompt", "clarity", "questions", "hook", "UserPromptSubmit"]
     },
     {
       "name": "leaniverse-igf",
       "description": "Leaniverse IGF — designs Instant Gratification Funnels that turn cold visitors into warm email subscribers by delivering expert value before asking for anything in return",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-igf",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-igf",
-          "description": "Leaniverse IGF — designs Instant Gratification Funnels that turn cold visitors into warm email subscribers"
-        }
-      ]
+      "source": "./skills/leaniverse-igf",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["funnel", "email", "subscribers", "lead-generation", "igf"]
     },
     {
       "name": "leaniverse-prd",
       "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document ready to hand to Claude Code",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-prd",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-prd",
-          "description": "Leaniverse PRD — guides solopreneurs through producing a minimal, structured product requirements document"
-        }
-      ]
+      "source": "./skills/leaniverse-prd",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["prd", "product", "requirements", "document", "planning"]
     },
     {
       "name": "leaniverse-content",
       "description": "Leaniverse Content — extracts brand voice into BRAND-VOICE.md and writes or rewrites content that strictly matches the brand's voice, tone, style, and themes",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-content",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-content",
-          "description": "Leaniverse Content — extracts brand voice and writes content that strictly matches it"
-        }
-      ]
+      "source": "./skills/leaniverse-content",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["content", "brand-voice", "writing", "copywriting", "tone"]
     },
     {
       "name": "leaniverse-upsell",
       "description": "Leaniverse Upsell — generates creative post-purchase upsell ideas by pairing products with strategic rationale, then optionally builds a branded sales page guideline",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-upsell",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-upsell",
-          "description": "Leaniverse Upsell — generates post-purchase upsell ideas and branded sales page guidelines"
-        }
-      ]
+      "source": "./skills/leaniverse-upsell",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["upsell", "sales", "post-purchase", "revenue", "conversion"]
     },
     {
       "name": "leaniverse-newsletter",
       "description": "Leaniverse Newsletter — builds a complete email follow-up sequence in the user's brand voice, calibrated to their goal, salesy level, and number of issues",
-      "source": {
-        "url": "https://github.com/seree/leaniverse-marketplace",
-        "path": "skills/leaniverse-newsletter",
-        "ref": "main"
-      },
-      "skills": [
-        {
-          "name": "leaniverse-newsletter",
-          "description": "Leaniverse Newsletter — builds complete email follow-up sequences in the user's brand voice"
-        }
-      ]
+      "source": "./skills/leaniverse-newsletter",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["newsletter", "email", "sequence", "follow-up", "brand-voice"]
     }
   ]
 }

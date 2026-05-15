@@ -1,16 +1,10 @@
 {
   "name": "leaniverse-newsletter",
-  "description": "Leaniverse Newsletter — builds a complete email follow-up sequence in the user's brand voice, calibrated to their goal, salesy level, and number of issues",
+  "description": "Leaniverse Newsletter \u2014 builds a complete email follow-up sequence in the user's brand voice, calibrated to their goal, salesy level, and number of issues",
   "version": "1.0.0",
   "author": {
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "leaniverse-newsletter",
-      "description": "Leaniverse Newsletter — builds complete email follow-up sequences in the user's brand voice"
-    }
-  ]
+  "license": "MIT"
 }

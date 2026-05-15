@@ -1,16 +1,10 @@
 {
   "name": "leaniverse-upsell",
-  "description": "Leaniverse Upsell — generates creative post-purchase upsell ideas by pairing products with strategic rationale, then optionally builds a branded sales page guideline",
+  "description": "Leaniverse Upsell \u2014 generates creative post-purchase upsell ideas by pairing products with strategic rationale, then optionally builds a branded sales page guideline",
   "version": "1.0.0",
   "author": {
     "name": "Consigliere",
     "email": "seree.w@gmail.com"
   },
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "leaniverse-upsell",
-      "description": "Leaniverse Upsell — generates post-purchase upsell ideas and branded sales page guidelines"
-    }
-  ]
+  "license": "MIT"
 }
